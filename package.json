@@ -3,15 +3,14 @@
   "version": "1.0.0",
   "description": "the head box with 5 buttons for React test",
   "main": "app.js",
-
   "devDependencies": {
-    "http-server": "^0.10.0",
+    "browser-sync": "^2.18.12",
     "node-sass": "^4.5.3"
   },
   "scripts": {
     "sass": "node-sass -w ./style.sass ./css/style.css",
-    "sass_min":"node-sass -w ./style.sass ./css/style_min.css --output-style compressed",
-    "start": "http-server ./ start -o -p 3000"
+    "sass_min": "node-sass -w ./style.sass ./css/style_min.css --output-style compressed",
+    "start": "browser-sync start --server  --files  './**/*.*'"
   },
   "repository": {
     "type": "git",
